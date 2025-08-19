@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Vishwas Bishnoi</title>
+  <style>
+    body { margin: 0; font-family: 'Poppins', sans-serif; color: #1a202c; scroll-behavior: smooth; }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .intro {
+      background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    .intro h1 { font-size: 64px; margin: 0; animation: fadeInDown 1.5s ease; }
+    .intro p { font-size: 26px; margin-top: 15px; animation: fadeInUp 1.5s ease; }
+
+    .content {
+      background: linear-gradient(135deg, #f0f4f7, #ffffff);
+      width: 100%;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      margin: 20px auto;
+      max-width: 900px;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover { transform: translateY(-8px); }
+
+    h2 { margin-top: 0; color: #1f8a70; font-size: 28px; }
+    p, dd, li { line-height: 1.7; font-size: 17px; }
+    dl { display: grid; grid-template-columns: 160px 1fr; gap: 14px; font-size: 17px; text-align: left; }
+    dt { font-weight: bold; }
+
+    .skills-list { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 15px; }
+    .skill {
+      padding: 10px 18px;
+      background: #1f8a70;
+      color: white;
+      border-radius: 20px;
+      font-size: 15px;
+      font-weight: 500;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .skill:hover { background: #166e58; transform: scale(1.05); }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 12px;
+      background: #1f8a70;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+    .btn:hover { background: #166e58; }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #1f8a70;
+      color: white;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- First Page with Background Image -->
+  <section class="intro">
+    <h1>Vishwas Bishnoi</h1>
+    <p>Roll Number: 12411046</p>
+    <a href="#about" class="btn">Explore My Portfolio</a>
+  </section>
+
+  <!-- Next Pages -->
+  <section id="about" class="content">
+    <div class="card">
+      <h2>Personal Information</h2>
+      <dl>
+        <dt>Full Name</dt><dd>Vishwas Bishnoi</dd>
+        <dt>Father</dt><dd>Sandeep Kumar</dd>
+        <dt>Mother</dt><dd>Lakmi Devi</dd>
+        <dt>Education</dt><dd>B.Tech (in progress) at College</dd>
+        <dt>Class 12</dt><dd>89.80%</dd>
+        <dt>Class 10</dt><dd>85%</dd>
+        <dt>Address</dt><dd>Village 55NP, PO Nanuwala, Raisinghnagar, Sri Ganganagar</dd>
+      </dl>
+    </div>
+
+    <div class="card">
+      <h2>My Skills</h2>
+      <div class="skills-list">
+        <span class="skill">Python</span>
+        <span class="skill">C++</span>
+        <span class="skill">C</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>About My Village — 55NP</h2>
+      <p>Our village is known for its <strong>greenery (hariyali)</strong> and farming culture, supported by the Indira Gandhi Canal. Agriculture is the backbone of the village economy. However, we face some challenges, especially the <strong>problem of bus connectivity</strong>, which makes travel difficult for students and workers commuting to nearby towns.</p>
+      <h3>Possible Solution</h3>
+      <p>To solve the bus problem, the government should introduce <strong>regular public bus services</strong> on fixed routes connecting our village to Raisinghnagar and nearby towns. Another solution is promoting <strong>shared transport services</strong> like mini-vans or e-rickshaws that operate on a timetable. This will help students and workers save time and travel conveniently.</p>
+    </div>
+
+    <div class="card">
+      <h2>About My Caste</h2>
+      <p>I belong to the <strong>Bishnoi caste</strong>, which has a rich heritage of environmental protection, compassion, and courage. Bishnois are known for their strong principles and sacrifices to protect nature.</p>
+      <ul style="text-align:left;">
+        <li>Respect and protection of trees and animals.</li>
+        <li>Commitment to non-violence and humanity.</li>
+        <li>Historical sacrifice at Khejarli in 1730 to save khejri trees.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>About Sri Ganganagar District</h2>
+      <p>Sri Ganganagar, the northernmost district of Rajasthan, is also known as the <strong>Food Basket of Rajasthan</strong>. Main crops include wheat, cotton, mustard, and sugarcane.</p>
+      <p>The district also houses one of the biggest <strong>solar power plants</strong> in India, contributing significantly to renewable energy.</p>
+      <p>It shares borders with <strong>Punjab, Haryana, and Pakistan</strong>, making it strategically important. The Indira Gandhi Canal, Asia’s largest canal, has transformed this desert region into fertile land.</p>
+    </div>
+
+    <div class="card">
+      <h2>Problems in Sri Ganganagar District & Solutions</h2>
+      <ul style="text-align:left;">
+        <li><strong>Waterlogging & Soil Salinity</strong> – Due to excessive irrigation from canals, some areas face waterlogging problems.<br/>✅ <em>Solution:</em> Promote <strong>drip irrigation</strong>, improve drainage systems, and create awareness about water management.</li>
+        <li><strong>Unemployment among youth</strong> – Many students migrate for jobs.<br/>✅ <em>Solution:</em> Encourage <strong>skill development programs</strong>, startups, and promote agro-based industries in the district.</li>
+        <li><strong>Health Facilities</strong> – Rural areas lack advanced hospitals.<br/>✅ <em>Solution:</em> Upgrade <strong>primary health centers</strong> and provide mobile medical vans for villages.</li>
+        <li><strong>Transport Issues</strong> – Villages far from towns face poor connectivity.<br/>✅ <em>Solution:</em> Increase <strong>public transport routes</strong> and introduce local bus/van services.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>About Rajasthan</h2>
+      <p>Rajasthan, the largest state of India by area, is famous for its <strong>deserts, forts, palaces, and cultural heritage</strong>. It is known as the <strong>Land of Kings</strong> (Rajputana) due to its glorious history of bravery and valor.</p>
+      <ul style="text-align:left;">
+        <li>Capital city: <strong>Jaipur</strong>, also called the Pink City.</li>
+        <li>Major tourist spots include <strong>Udaipur, Jodhpur, Jaisalmer, and Mount Abu</strong>.</li>
+        <li>Home of the great Thar Desert.</li>
+        <li>Folk music, dance (Ghoomar, Kalbeliya), and handicrafts are world-famous.</li>
+        <li>Rich wildlife with sanctuaries like <strong>Ranthambore and Keoladeo Ghana</strong>.</li>
+      </ul>
+      <p>Rajasthan is a land of courage, tradition, and unmatched hospitality — <strong>Padharo Mhare Desh</strong> is the slogan that welcomes everyone to the state.</p>
+    </div>
+
+    <div class="card" style="text-align:center">
+      <button class="btn" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 · Portfolio of <strong>Vishwas Bishnoi</strong> — Sri Ganganagar, Rajasthan <br />
+    📞 Mobile: <strong>+91-6378004213</strong> <br />
+    📧 Email: <strong>boishnoivishwas229@gmail.com</strong>
+  </footer>
+</body>
+</html>
